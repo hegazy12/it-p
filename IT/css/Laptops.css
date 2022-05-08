@@ -1,0 +1,189 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body
+{
+    background-color: #393939;
+    margin-left: 15%;
+    overflow-x: hidden;
+}
+.nav-bar
+{
+    height: 10rem;
+    width: 100%;
+    background-color: #FF5A09 ;
+    overflow: hidden;
+    margin-right: 0;
+    margin-left: auto;
+    box-shadow: 0px 5px #be4f0c;
+
+}
+.nav-bar h2
+{
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-right: 50%;
+    font-family: 'Indie Flower', cursive;
+    margin-left: 50%;
+    color: #FFF;
+}
+
+.container .Navigation-bar
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 15%;
+    background-color: #ec7f37;
+    border-right: 10px outset #ec7f37;
+
+}
+.container .Navigation-bar h4
+{
+    font-size: 3rem;
+    margin: 2rem 0 2rem 2rem;
+    color: #393939;
+}
+.container .Navigation-bar .navbar-content
+{
+    margin: 2rem;
+}
+.container .Navigation-bar .navbar-content .navbar-item
+{
+    list-style-type: none;
+}
+.container .Navigation-bar .navbar-content .navbar-item .navbar-link
+{
+    text-decoration: none;
+    color: #be4f0c;
+    font-size: 1.5rem;
+}
+.container .Navigation-bar .navbar-content .navbar-item .navbar-link:hover
+{
+    color: #FFF;
+    transition: 0.4s;
+}
+.container .new-products
+{
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+.container .new-products h2
+{
+    font-size: 3rem;
+    color: #be4f0c;
+}
+.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    margin: 3.5rem;
+    color: #ec7f37;
+}
+.product-pics
+{
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+}
+.caption {
+    display: block;
+}
+b
+{
+    display: block;
+}
+.add-to-cart
+{
+    border-color: #393939;
+    background-color: #be4f0c;
+    border-style: outset;
+    border-width: 10px;
+}
+.add-to-cart:hover
+{
+    padding: 10px;
+    border: 5px outset #be4f0c;
+    background-color: #393939;
+    transition: .6s;
+}
+.our-products
+{
+    width: 80%;
+    height: 400px;
+    margin-left: 10%;
+    border: 1rem #be4f0c outset;
+    justify-items: auto;
+    resize: vertical;
+    overflow:auto;
+    display: block;
+    margin-bottom: 10rem;
+}
+#our-products-title, #Mac-video
+{
+    text-align: center;
+}
+video
+{
+    width: 720px;
+    margin-left: 30%;
+    margin-right: 25%;
+}
+#Product-summary
+{
+    margin: 2rem;
+    color: white;
+}
+table
+{
+    margin-right: 10px;
+    margin: 2rem;
+    border-collapse: collapse;
+    width: 80%;
+    font-size: 2rem;
+}
+table td
+{
+    border: 1px solid #be4f0c;
+    padding: 8px;
+}
+table tr:nth-child(even)
+{
+    background-color: #FF5A09;
+}
+table tr:nth-child(odd)
+{
+    background-color: #ec7f37;
+}
+table th
+{
+    text-align: left;
+}
+#confirm-button
+{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 100px;
+    width: 200px;
+    margin-right: 60%;
+    margin-left: 40%;
+    font-size: 40px;
+    font-family: Koulen;
+    background-color: #be4f0c;
+    color: lavender;
+    border-radius: 10%;
+    border-color: #ec7f37;
+    border-width: 3px;
+    border-style: outset;
+}
+#confirm-button:hover
+{
+    background-color: lavender;
+    color: #be4f0c;
+    transition: .6s;
+}

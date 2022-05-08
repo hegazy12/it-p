@@ -1,0 +1,220 @@
+* {
+    font-family: 'Sen', sans-serif;     
+}
+.start
+{
+    
+    color: #000000;
+    text-align: center;
+    text-shadow: 2px 2px 4px #3e3e3e;
+    font-size: 35px;
+    margin: auto auto;
+    padding-bottom: 10px;
+    color: var(--textColor);
+    width: 40%;
+    border-bottom: 2px red solid;
+}
+body
+{
+    background-color:#DCDCDC;
+}
+table
+{
+    width: 35%; 
+    position: relative;
+    margin: auto;
+    text-shadow: 1px 1px 2px #3e3e3e;
+    font-size: 20px;
+}
+table td{
+    padding: 15px;
+    background-color: #eceaea;
+    border: 2px solid #bdbdbd;
+    text-align: center;
+    border-radius: 6px;
+}
+table thead td{
+background-color: antiquewhite;
+font-weight: bold;
+}
+p{
+    color: #000000;
+    font-size: 35px;
+    text-shadow: 2px 2px 4px #3e3e3e;
+    text-align: center;
+}
+ul{
+    color: #000000;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px #3e3e3e;
+}
+.title{
+    color: #000000;
+    font-size: 35px;
+    text-shadow: 2px 2px 4px #3e3e3e;
+}
+#less
+{
+    font-size: 25px;
+    text-align: left;
+}    
+.bodyimage
+{
+    margin-left: 120px;
+    position: relative;
+    top: -950px;
+    padding-top: 50px;
+}
+.measurement
+{
+    position: relative;
+    top: -800px;
+    margin-left: 60px ;
+}
+#sizevideo
+{
+    display: block;
+    margin: auto;
+    position: relative;
+    right: 20px;
+}
+#line
+{
+    border: 1px red;
+}
+.smaller
+{
+    max-width: 900px;
+    max-height: 900px;
+}
+.shipping
+{
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #3e3e3e;
+    text-align: center;
+}
+#oneship
+{
+    font-size: 35px;
+    text-shadow: 2px 2px 4px #3e3e3e;
+    text-align: center;
+}
+#secpay
+{
+    font-size: 35px;
+    text-shadow: 2px 2px 4px #3e3e3e;
+    text-align: center;
+}
+#line1
+{
+    color: #000000;
+    text-align: center;
+    text-shadow: 2px 2px 4px #3e3e3e;
+    font-size: 50px;
+    margin: auto auto;
+    padding-bottom: 10px;
+    color: var(--textColor);
+    border-bottom: 2px red solid;
+    font-weight: bold;
+}
+#line2
+{
+    color: #000000;
+    text-align: center;
+    text-shadow: 2px 2px 4px #3e3e3e;
+    font-size: 50px;
+    margin: auto auto;
+    padding-bottom: 10px;
+    color: var(--textColor);
+    border-bottom: 2px red solid;
+    font-weight: bold;
+}
+#icoship
+{
+    max-width: 48px;
+    position: relative;
+    left: 303px;
+    position: relative;
+    top: -76px;
+}
+#shipform
+{
+    position: relative;
+    top: -60px;
+}
+#icocash
+{
+    max-width: 48px;
+    position: relative;
+    left: 0px;
+    position: relative;
+    top: 16px; 
+}
+#icocard
+{
+    max-width: 200px;
+    position: relative;
+    left: 0px;
+    position: relative;
+    top: 12px; 
+}
+#icopay
+{
+    max-width: 50px;
+    position: relative;
+    left: 400px;
+    position: relative;
+    top: -86px;    
+}
+#payform
+{
+    position: relative;
+    top: -83px;
+}
+.formstyle
+{
+    width: 287px;
+    height: 30px;
+    font-size: 25px;
+}
+.cvv
+{
+    width: 100px;
+    height: 30px;
+    font-size: 25px;
+}
+.expdate
+{
+    width: 216px;
+    height: 30px;
+    font-size: 25px;
+}
+#button
+{
+    display: inline;
+    width: 220px;
+    font-size: 35px;
+    font-family: sans-serif;
+    padding: 17px;
+    background-color: aliceblue;
+    border: 0px;
+    border-radius: 20px;
+    margin: 5px;
+    position: relative;
+    left: 0px;
+    text-shadow: 2px 2px 4px #3e3e3e;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+#button:hover
+{
+    background-color: rgb(255, 255, 255);
+    box-shadow: -5px 5px 5px 0px #B9C46A, 5px -5px 5px 0px #BC4634;
+    color: hsl(0, 0%, 100%);
+    background-color: #000000;
+    text-shadow: 2px 2px 4px whitesmoke;
+    
+}
+.hide {
+    display: none;
+  }

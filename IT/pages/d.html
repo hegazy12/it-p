@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+<style>
+
+.c{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+} 
+h1{
+   color: orangered;
+   font-size: 3rem;
+}
+p{
+   font-size: 2rem;
+   line-height: 0rem;
+}
+body{
+   background-color: rgb(247, 241, 241);
+}
+span{
+   text-decoration: line-through;
+   font-size: 1.5rem;
+}
+
+</style>
+</head>
+
+<body>
+   <div>
+     <center>  <img src="../media/d.jpg" id="g1" height="400px"/> </center>
+   
+   </div>
+            <h1>
+              summer dress 
+            </h1>
+             <p>only available in this color </p>
+             <p> Andiamo Fashion Floral Pattern Side Slits Short Sleeves Maxi Cardigan for Women L.  </p>
+             <p class="price"> $50.99 <span> $60</span></p>   
+    <div class="c">
+         <div>
+           <center> <img src="../media/5/d1.jpg" height="250px" id="a1" onclick="gg('a1','g1')" /> </center>
+         </div>
+
+         <div>
+          <center> <img src="../media/5/d2.jpg" height="250px" id="a2" onclick="gg('a2','g1')" /> </center>
+         </div>
+
+         <div>
+            <center> <img src="../media/5/d3.jpg" height="250px" id="a3" onclick="gg('a3','g1')"/> </center>
+         </div>
+
+         <div>
+          <center> <img src="../media/5/d4.jpg" height="250px" id="a4" onclick="gg('a4','g1')" /> </center>
+         </div>
+    </div> 
+    
+    <script>
+        function gg(ids,idd){
+            var x =document.getElementById(ids).getAttribute("src");
+            document.getElementById(idd).setAttribute("src",x);
+            document.body.scrollTop =0;
+            document.documentElement.scrollTop=0;
+        }
+    </script>
+
+</body>
+</html>

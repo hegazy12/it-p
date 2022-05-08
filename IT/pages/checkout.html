@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Checkout </title>
+        <link rel="stylesheet" href="../css/pay_size.css"> 
+    </head>
+    <div class="shipping">
+    <body>
+        <div class="shipping">
+        <h id="line1">Shipping Details</h>
+        <p id="oneship">Please Enter Your Shipping Detalis</p>
+        <img id="icoship" src="../media/ship.png";>
+        <form id="shipform" method="post">
+        <div>
+            <label>First Name:</label>
+            <input class="formstyle" type="text" required placeholder="Ex:Mohamed">
+            <label>Last Name:</label>
+            <input class="formstyle" type="text" required placeholder="Ex:Ahmed"> 
+        </div> 
+        <br>   
+        <div>
+            <label>Your Address:</label>
+            <input class="formstyle" type="text" required placeholder="Ex:50 Shoubra St. - Cairo,Egypt">
+        </div>
+        <br>    
+        <div>
+            <label>Email Address:</label>
+            <input class="formstyle" type="email" required placeholder="Ex:name@gmail.com">
+        </div>
+        <br>
+        <div>
+            <label>Phone Number:</label>
+            <input class="formstyle" type="number" required placeholder="Ex:01234567891">
+        </div>
+        <br>
+        <h id="line2">Payment Method</h>
+        <p id="secpay">Please Choose Your Favourite Payment Method</p>
+        <img id="icopay" src="../media/payment-method.png";>
+        <div id="payform">
+            <div>
+            <input id="cash" type="radio" name="Payment" value="Cash" required onclick="show1();" >
+            <label for="cash">Cash On Delivery</label>
+            <img id="icocash" src="../media/cash.png";>
+            &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;
+            <input id="creditcard" type="radio" name="Payment" value="creditcard" required onclick="show2();" >
+            <label for="creditcard">Credit/Debit/Prepaid Card</label>
+            <img id="icocard" src="../media/card.png";>
+        </div>
+        <br>
+        <div id="div1" class="hide">
+        <div>
+            <label>Card Number:</label>
+            <input id="req1" class="formstyle" type="text" placeholder="Ex:0000-0000-0000-0000" >
+        </div>
+        <br>
+        <div>
+            <label>Exp Date:</label>
+            <input id="req2" class="expdate" type="month" placeholder="Ex:Jan-2025" > 
+        </div>
+        <br>
+        <div>
+            <label>CVV:</label>
+            <input id="req3"  class="cvv" type="number" placeholder="Ex:000" > 
+        </div>
+        <br>
+        </div id="div1">
+        </div>
+        <div>
+            <input id="button" type="submit" value="Place Order">
+        </div>
+        <script src="../js/pay.js"></script>
+        </form>
+        </div>
+        
+    </body>

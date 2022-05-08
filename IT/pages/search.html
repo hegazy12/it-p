@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/d0f75bdb5c.js" crossorigin="anonymous"></script>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<title>Search Results</title>
+</head>
+<body>
+<div class="intro">
+	<strong class="ship">Want to ship outside of Egypt? </strong> <a href="#" class="firstLink"> Learn about our international shipping.</a>
+	<strong class="ship" style="float: right; margin-top: -11px; margin-right: 30px; margin-left: 7px;">Egypt</strong>
+	<img src="../media/EG.gif" style="float: right; margin: 3px 2px 0px 0px;">
+</div>
+<div class="wrapper">
+	<div class="nav">
+		<ul>
+			<li class="StoreName"><a href="index.html" class="StoreName">
+				<div class="animated">
+					<strong>
+						<span class="animation" aria-hidden="true">M</span>
+						<span class="animation" aria-hidden="true">I</span>
+						<span class="animation" aria-hidden="true">R</span>
+						<span class="animation" aria-hidden="true">A</span>
+						<span class="animation" aria-hidden="true">G</span>
+						<span class="animation" aria-hidden="true">E</span>
+					</strong></a></li>
+				</div>
+				<h1><a id="signIn" href="#">Sign in</a></h1>
+		<a id="hamBars" href="faqs.html">FAQs</a>
+	<a id="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+		</ul>
+	</div>
+	<div class="searchDiv">
+		<input class="search" type="text" placeholder="Search..">
+		 <a id="buttonSearch" href="search.html"><i class="fa fa-search"></i></a>
+	</div>
+
+
+	
+</div>
+</div>
+<hr id="line">
+<div class="categories">
+	<ul style="list-style-type: none;">
+		<li><a class="categs" href="index.html">Home</a></li>
+		<li><a class="categs" href="#">Men's Clothes</a></li>
+		<li><a class="categs" href="#">Women's Clothes</a></li>
+		<li><a class="categs" href="#">Kids's Clothes</a></li>
+		<li><a class="categs" href="#">Size Charts</a></li>
+		<li><a class="categs" href="#">Contact Us</a></li>
+		<li><a class="categs" href="#">About</a></li>
+	</ul>
+</div>
+<i class="fa-solid fa-magnifying-glass" style="text-align: center; font-size: 100px; margin-left: 45%; margin-top: 10%;"></i>
+<h1 style="text-align: center; font-family: sans-serif; margin-top: 100px; font-size: 30px;">Sorry, we couldn't find what you're looking for!</h1>
+<br>
+<h3 style="text-align: center;"><a href="index.html" style="color: black;">Go Back Home</a></h3>
+</body>
+<script type="text/javascript">
+  
+  function scrollToTop(){
+var timerHandle = setInterval(function() {
+  if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0)
+  window.scrollBy(0,-50); else clearInterval(timerHandle); },1);
+}
+
+const elements = document.getElementsByClassName('animation');
+
+for (let i = 0; i <= elements.length; i++) {
+	elements[i].addEventListener('animationend', function(e) {
+    elements[i].classList.remove('animated');
+	});
+
+  elements[i].addEventListener('mouseover', function(e) {
+    elements[i].classList.add('animated')
+  })
+}
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</html>

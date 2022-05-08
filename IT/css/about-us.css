@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sen', sans-serif;
+  
+}
+:root{
+ 
+    --back1: rgb(242, 242, 242);
+    --normalColor: rgb(237, 78, 73);
+}
+
+header {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .container {
+  width: 80%;
+  height: 40vh;
+  margin: 125px auto 0;
+  background: url('../media/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: White;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .container .filter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+body{
+  background-color:#DCDCDC;
+}
+.about {
+  color: var(--textColor);
+  margin: 125px 50px;
+  text-align: center;
+}
+
+.about .container h1 {
+  font-size: 40px;
+}
+
+.about h3 {
+  font-size: 30px;
+  margin: 0 auto;
+  width: 40%;
+  min-width: 237px;
+  padding-bottom: 10px;
+  border-bottom: 2px var(--normalColor) solid;
+}
+
+.about p {
+  font-size: 20px;
+  margin: 15px 50px;
+}
+
+.members {
+  margin: 75px 50px;
+  background-color: transparent;
+}
+
+.members p {
+  color: var(--textColor);
+}
+
+.members .container h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 30px auto;
+  padding-bottom: 10px;
+  color: var(--textColor);
+  width: 40%;
+  border-bottom: 2px var(--normalColor) solid;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member {
+  background: var(--back1);
+  margin: 0 5px;
+  margin-bottom: 75px;
+  margin-top: 75px;
+  width: 300px;
+  padding: 20px;
+  color: #141414;
+  position: relative;
+}
+
+.team .team_member .role {
+  color: rgb(134, 26, 26);
+  margin-top: 65px;
+  margin-bottom: 25px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  border-radius: 100%;
+  background: transparent;
+}
+
+.team .team_member .team_img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+f {
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  color: var(--normalColor);
+  top: 50px;
+  font-size: 24px;
+  cursor: default;
+  transition: .5s;
+}
+
+f:hover {
+  animation: animate 8s linear infinite;
+  color: #81c644;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+f:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+f:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+.aim {
+  color: var(--textColor);
+  text-align: center;
+}
+
+.aim .container {
+  padding: 0 100px;
+}
+
+.aim .container h1 {
+  font-size: 50px;
+}
+
+.aim .container h3 {
+  font-size: 30px;
+  margin: 0 auto;
+  width: 40%;
+  padding-bottom: 10px;
+  border-bottom: 2px var(--normalColor) solid;
+}
+
+.aim .container p {
+  padding-top: 10px;
+}
+
+.counter {
+  width: 90%;
+  text-align: center;
+  color: var(--textColor);
+  margin: 125px auto;
+}
+
+.counter>h1 {
+  font-size: 40px;
+}
+
+.counter>h3 {
+  font-size: 30px;
+  margin: 0 auto;
+  width: 40%;
+  min-width: 237px;
+  padding-bottom: 10px;
+  border-bottom: 2px var(--normalColor) solid;
+}
+
+.counterBox {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px;
+  color: var(--textColor);
+  background-color: var(--back1);
+}
+
+.counterBox h1 {
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 1060px) {
+  header .container {
+    margin: 18px auto 0;
+  }
+
+  .about {
+    color: var(--textColor);
+    margin: 18px 15px;
+    text-align: center;
+  }
+
+  .members {
+    margin: 18px 50px;
+  }
+
+  .team .team_member {
+    margin: 80px 5px 0;
+  }
+
+  .counter {
+    margin: 18px auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .counterBox {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  header .container .filter h1 {
+    font-size: 40px;
+  }
+
+  .about p {
+    font-size: 20px;
+    margin: 15px 10px;
+  }
+
+  .members .container h1 {
+    min-width: 237px;
+  }
+
+  .aim .container {
+    padding: 0 25px;
+  }
+
+  .aim .container h1 {
+    font-size: 50px;
+  }
+
+  .aim .container h3 {
+    min-width: 237px;
+  }
+
+  .aim .container p {
+    font-size: 16px;
+  }
+
+  .counterBox {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+  }
+}
