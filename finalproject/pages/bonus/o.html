@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<div class="maiarpage">
+
+<head>
+<style>
+
+.maiarpage .animation.animated {
+	animation-name: rubberBand;
+
+
+}
+.maiarpage #linenav{
+	margin-top: 20px;
+	width: 95%;
+	border-style: solid;
+	border-width: .1px;
+}
+
+.maiarpage #cart{
+	margin-top: -51px;
+	margin-right: 32px;
+	font-size: 25px;
+	color: black;
+	float: right;
+}
+
+.maiarpage #hamBars{
+	margin-top: -51px;
+	margin-right: 106px;
+	font-size: 20px;
+	color: black;
+	float: right;
+	font-weight: 50;
+}
+
+.maiarpage #signIn{
+	text-decoration: none;
+	color: black;
+	font-family: sans-serif;
+	font-size: 20px;
+	position: absolute;
+	/*background-image: linear-gradient(90deg, black, black);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 100% 3px;*/
+	margin-left: 1155px;
+	margin-top: -56px;
+	border: 2px solid black;
+	padding: 5px 10px;
+	transition: 0.2s;
+}
+
+.maiarpage #signIn:hover{
+	opacity: 70%;
+}
+
+.maiarpage .StoreName{
+	list-style-type: none;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-family: 'Nova Flat';font-size: 22px;
+	font-size: 28px;
+	margin-top: 10px;
+	margin-left: -2px;
+	margin-bottom: 5px;
+	text-decoration: none;
+	color: darkslategrey;
+	color: black;
+	text-shadow: .8px .8px 1px black;
+	transform: scaleY(1.2);
+	letter-spacing: 0px;
+}
+
+.maiarpage .categsHome{
+	color: #d61f27;
+	text-decoration: none;
+	font-size: 1.1rem;
+	float: left;
+	margin-top: 10px;
+	margin-right: 70px;
+	margin-left: 30px;
+	background-image: linear-gradient(90deg, #d61f27, #d61f27);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position: bottom;
+	background-size: 100% 2px;
+	font-family: sans-serif;
+	font-weight: 100;
+	transition: 0.3s;
+}
+.maiarpage .categs{
+	color: black;
+	text-decoration: none;
+	font-size: 1.1rem;
+	float: left;
+	margin-top: 10px;
+	margin-right: 70px;
+	margin-left: 30px;
+	background-image: linear-gradient(90deg, black, black);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position: bottom;
+	background-size: 0% 2px;
+	transition: 0.3s;
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.maiarpage .categs:hover{
+	background-size: 100% 2px;
+}
+.maiarpage li{
+	list-style-type: none;
+}
+
+.maiarpage .search{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -54px;
+	height: 35px;
+	width: 800px;
+	border-radius: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: grey;
+	text-indent: 18px;
+	font-size: 17px;
+	outline: none;
+	transition: 0.2s;
+}
+
+
+.maiarpage .search:focus{
+	border-width: 1px;
+	border-color: black;
+	border-bottom-width: 2px;
+	box-shadow: 2px 2px 2px black;
+}
+.maiarpage #buttonSearch{
+	position: absolute;
+	background-color: white;
+	border: none;
+	margin-left: 1070px;
+	margin-top: -45px;
+	color: grey;
+	transition: 0.2s;
+}
+
+.maiarpage #buttonSearch:hover{
+	cursor: pointer;
+	color: black;
+}
+.maiarpage .c{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+} 
+.maiarpage h1{
+   color: orangered;
+   font-size: 3rem;
+}
+.maiarpage p{
+   font-size: 2rem;
+   line-height: 0rem;
+}
+.maiarpage body{
+   background-color: rgb(247, 241, 241);
+}
+.maiarpage span{
+   text-decoration: line-through;
+   font-size: 1.5rem;
+}
+
+</style>
+</head>
+
+<body class="maiarpage">
+   <div class="wrapper">
+      <div class="nav">
+          <ul>
+              <li class="StoreName"><a href="index.html" class="StoreName">
+                  <div class="animated">
+                      <strong>
+                          <span class="animation" aria-hidden="true">M</span>
+                          <span class="animation" aria-hidden="true">I</span>
+                          <span class="animation" aria-hidden="true">R</span>
+                          <span class="animation" aria-hidden="true">A</span>
+                          <span class="animation" aria-hidden="true">G</span>
+                          <span class="animation" aria-hidden="true">E</span>
+                      </strong></a></li>
+                  </div>
+                  <h1><a id="signIn" href="#">Sign in</a></h1>
+          <a id="hamBars" href="faqs.html">FAQs</a>
+      <a id="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          </ul>
+      </div>
+      <div class="searchDiv">
+          <input class="search" type="text" placeholder="Search..">
+           <a id="buttonSearch" href="search.html"><i class="fa fa-search"></i></a>
+      </div>
+  </div>
+  </div>
+  <hr id="linenav">
+  <div class="categories">
+      <ul style="list-style-type: none;">
+         <li><a class="categsHome" href="../pages/index.html">Home</a></li>
+         <li><a class="categs" href="../pages/clothes.html">Clothes</a></li>
+         <li><a class="categs" href="../pages/Project.html">Games</a></li>
+         <li><a class="categs" href="../pages/size guide.html">Size Guide</a></li>
+         <li><a class="categs" href="../pages/laptops.html">laptops</a></li>
+         <li><a class="categs" href="../pages/phones.html">mobile phones</a></li>
+         <li><a class="categs" href="../pages/about-us.html">About</a></li>
+      </ul>
+      <br> <br> <br>
+      <hr id="linenav">
+  </div>
+   <div>
+     <center><img src="../../media/o.jpg" id="g1" height="400px"/> </center>
+   
+      <!--<input type="text" id="gg"/> <input type="button" value="send" onclick="comm()">
+     <div id="go"> -->
+      
+     </div>
+   
+   
+   </div>
+            <h1>
+              summer dress 
+            </h1>
+             <p>only available in this color </p>
+             <p> Andiamo Fashion Floral Pattern Side Slits Short Sleeves Maxi Cardigan for Women L.  </p>
+             <p class="price"> $50.99 <span> $60</span></p>   
+    <div class="c">
+         <div>
+           <center> <img src="../../media/o1/o1.jpg" height="250px" id="a1" onclick="gg('a1','g1')" /> </center>
+         </div>
+
+         <div>
+          <center> <img src="../../media/o1/o2.jpg" height="250px" id="a2" onclick="gg('a2','g1')" /> </center>
+         </div>
+
+         <div>
+            <center> <img src="../../media/o1/o3.jpg" height="250px" id="a3" onclick="gg('a3','g1')"/> </center>
+         </div>
+
+         <div>
+          <center> <img src="../../media/o1/o4.jpg" height="250px" id="a4" onclick="gg('a4','g1')" /> </center>
+         </div>
+    </div> 
+    
+    <script>
+        function gg(ids,idd){
+            var x =document.getElementById(ids).getAttribute("src");
+            document.getElementById(idd).setAttribute("src",x);
+            document.body.scrollTop =0;
+            document.documentElement.scrollTop=0;
+        }
+    </script>
+
+</body>
+</div>
+</html>

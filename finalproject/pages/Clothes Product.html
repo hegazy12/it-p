@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<div class="maiarpage">
+	<head>
+        <meta charset="utf-8">
+        <title> FirstPoduct </title>
+        <link rel="stylesheet" href="../css/main.css"> 
+        <script src="https://kit.fontawesome.com/d0f75bdb5c.js" crossorigin="anonymous"></script>
+	    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    </head>
+<body class="maiarpage">
+   <div class="wrapper">
+      <div class="nav">
+          <ul>
+              <li class="StoreName"><a href="index.html" class="StoreName">
+                  <div class="animated">
+                      <strong>
+                          <span class="animation" aria-hidden="true">M</span>
+                          <span class="animation" aria-hidden="true">I</span>
+                          <span class="animation" aria-hidden="true">R</span>
+                          <span class="animation" aria-hidden="true">A</span>
+                          <span class="animation" aria-hidden="true">G</span>
+                          <span class="animation" aria-hidden="true">E</span>
+                      </strong></a></li>
+                  </div>
+                  <h1><a id="signIn" href="#">Sign in</a></h1>
+          <a id="hamBars" href="faqs.html">FAQs</a>
+      <a id="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          </ul>
+      </div>
+      <div class="searchDiv">
+          <input class="search" type="text" placeholder="Search..">
+           <a id="buttonSearch" href="search.html"><i class="fa fa-search"></i></a>
+      </div>
+  </div>
+  </div>
+  <hr id="linenav">
+  <div class="categories">
+      <ul style="list-style-type: none;">
+        <li><a class="categsHome" href="../pages/index.html">Home</a></li>
+        <li><a class="categs" href="../pages/clothes.html">Clothes</a></li>
+        <li><a class="categs" href="../pages/Gaming.html">Games</a></li>
+        <li><a class="categs" href="../pages/size guide.html">Size Guide</a></li>
+        <li><a class="categs" href="../pages/laptops.html">laptops</a></li>
+        <li><a class="categs" href="../pages/phones.html">mobile phones</a></li>
+        <li><a class="categs" href="../pages/card.html">Cart</a></li>
+        <li><a class="categs" href="../pages/house.html">House</a></li>
+        <li><a class="categs" href="../pages/books.html">Books</a></li>
+        <li><a class="categs" href="../pages/about-us.html">About</a></li>
+      </ul>
+      <br> <br> <br>
+      <hr id="linenav">
+  </div>
+   <div>
+     <center>  <img src="../media/a.jpg" id="g1" height="400px"/> </center>
+   
+   </div>
+            <h1>
+              summer dress 
+            </h1>
+             <p>only available in this color </p>
+             <p> Andiamo Fashion Floral Pattern Side Slits Short Sleeves Maxi Cardigan for Women L.  </p>
+             <p class="price"> $50.99 <span> $60</span></p>   
+    <div class="c">
+         <div>
+           <center> <img src="../media/2/a1.jpg" height="250px" id="a1" onclick="gg('a1','g1')" /> </center>
+         </div>
+
+         <div>
+          <center> <img src="../media/2/a3.jpg" height="250px" id="a2" onclick="gg('a2','g1')" /> </center>
+         </div>
+
+         <div>
+            <center> <img src="../media/2/a2.jpg" height="250px" id="a3" onclick="gg('a3','g1')"/> </center>
+         </div>
+
+         <div>
+          <center> <img src="../media/2/a4.jpg" height="250px" id="a4" onclick="gg('a4','g1')" /> </center>
+         </div>
+    </div> 
+    
+    <script>
+        function gg(ids,idd){
+            var x =document.getElementById(ids).getAttribute("src");
+            document.getElementById(idd).setAttribute("src",x);
+            document.body.scrollTop =0;
+            document.documentElement.scrollTop=0;
+        }
+    </script>
+
+</body>
+<div id="footer">
+	<h9 style="padding-top: 20px;">&copy; 2022 Mirage, Inc.</h9>
+	<div id="socials">
+		<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="color: white; font-size: 20px; padding-right: 10px;"></i></a>
+		<a href="https://www.twitter.com/"><i class="fa-brands fa-twitter" style="color: white; font-size: 20px; padding-right: 10px;"></i></a>
+		<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: white; font-size: 20px; padding-right: 10px; padding-bottom: 6px;"></i></a>
+	</div>
+	<h9 style="color: white; "><a href="#" style="color: white;">FAQs</a></h9>
+</div>
+</div>
+</html>
